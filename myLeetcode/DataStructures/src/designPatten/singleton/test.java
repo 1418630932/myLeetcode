@@ -6,4 +6,7 @@ package designPatten.singleton;
  * @time 23:53
  **/
 public class test {
+    public static void main(String[] args) {
+
+    }
 }
