@@ -42,6 +42,8 @@ public class Test229 {
         }
         if (tickit1>nums.length/3)res.add(num1);
         if (tickit2>nums.length/3)res.add(num2);
+
+
         return res;
     }
 }
