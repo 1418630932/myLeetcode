@@ -7,8 +7,11 @@ package leetcode.mianShiTi;
  **/
 public class Test14_2 {
     public static void main(String[] args) {
-        int i = cuttingRope(120);
-        System.out.println(i);
+        int i=1;
+        int b= 0;
+        int c=b=i;
+        System.out.println(c);
+        System.out.println(b);
     }
 
     public static int cuttingRope(int n) {
