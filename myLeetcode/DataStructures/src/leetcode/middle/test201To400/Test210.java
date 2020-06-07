@@ -9,8 +9,13 @@ import java.util.*;
  **/
 public class Test210 {
     public static void main(String[] args) {
-        int[] order = findOrder(3, new int[][]{{0, 1}, {0, 2}, {1, 2}});
-        System.out.println(Arrays.toString(order));
+        long before = System.currentTimeMillis();
+        int res = 1;
+        for (int i = 0; i < 100000000; i++) {
+            res &= i;
+        }
+        long after = System.currentTimeMillis();
+        System.out.println(after-before);
     }
     public static int[] findOrder(int numCourses, int[][] prerequisites) {
         ArrayList<Integer>[] choseThenCanStudy = new ArrayList[numCourses];
@@ -44,4 +49,7 @@ public class Test210 {
         }
         return arr;
     }
+
+
+
 }
