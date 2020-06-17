@@ -17,8 +17,7 @@ public class Test739 {
     }
     public static int[] dailyTemperatures(int[] T) {
         int[] res = new int[T.length];
-        LinkedList<Object> objects = new LinkedList<>();
-
+        Deque<Integer> queue = new LinkedList<>();
         queue.add(0);
         for (int i = 1; i < T.length; i++) {
             //保证递减
